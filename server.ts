@@ -12,11 +12,6 @@
  */
 import express, {Request, Response} from 'express';
 import UserController from "./controllers/UserController";
-import TuitController from "./controllers/TuitController";
-import LikeController from "./controllers/LikeController";
-import BookmarkController from "./controllers/BookmarkController";
-import MessageController from "./controllers/MessageController";
-import FollowController from "./controllers/FollowController";
 import mongoose from "mongoose";
 
 // build the connection string
@@ -33,11 +28,6 @@ app.get('/add/:a/:b', (req: Request, res: Response) =>
 
 // create RESTful Web service API
 const userController = UserController.getInstance(app);
-const tuitController = TuitController.getInstance(app);
-const likesController = LikeController.getInstance(app);
-const bookmarksController = BookmarkController.getInstance(app);
-const messageController = MessageController.getInstance(app);
-const followController = FollowController.getInstance(app);
 
 /**
  * Start a server listening at port 4000 locally
