@@ -1,5 +1,5 @@
-Tuit_Node/.idea
-Tuit_Node/node_modules
-Tuit_Node/build
-Tuit_Node/data
-Tuit_Node/out
+.idea
+node_modules
+build
+data
+out
